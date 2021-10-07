@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/superHerosFragment">
+
+    <fragment
+        android:id="@+id/superHerosFragment"
+        android:name="com.example.kotlinpractica.presentation.view.SuperHerosFragment"
+        android:label="fragment_super_heros"
+        tools:layout="@layout/fragment_super_heros" >
+        <action
+            android:id="@+id/action_superHerosFragment_to_superHeroDetaitlsFragment"
+            app:destination="@id/superHeroDetaitlsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/superHeroDetaitlsFragment"
+        android:name="com.example.kotlinpractica.presentation.view.SuperHeroDetaitlsFragment"
+        android:label="fragment_super_hero_detaitls"
+        tools:layout="@layout/fragment_super_hero_detaitls" >
+        <action
+            android:id="@+id/action_superHeroDetaitlsFragment_to_superHerosFragment"
+            app:destination="@id/superHerosFragment" />
+    </fragment>
+</navigation>
