@@ -1,5 +1,32 @@
 <resources>
     <string name="app_name">practica-kotlin-app</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_view_nombre">Nombre:</string>
+    <string name="txt_view_powerstats">Estadísticas de poderes</string>
+    <string name="txt_view_intelligence">Inteligencia:</string>
+    <string name="txt_view_strength">Fuerza:</string>
+    <string name="txt_view_speed">Velocidad:</string>
+    <string name="txt_view_durability">Durabilidad:</string>
+    <string name="txt_view_power">Poder:</string>
+    <string name="txt_view_combat">Combate:</string>
+    <string name="txt_view_biography">Biografía</string>
+    <string name="txt_view_full_name">Nombre completo:</string>
+    <string name="txt_view_alter_egos">Alter egos:</string>
+    <string name="txt_view_aliases">Aliados:</string>
+    <string name="txt_view_place_of_birth">Lugar de nacimiento:</string>
+    <string name="txt_view_first_appearance">Primera aparición:</string>
+    <string name="txt_view_publisher">Publicador:</string>
+    <string name="txt_view_aligment">Alineación:</string>
+    <string name="txt_view_appearance">Aparencia</string>
+    <string name="txt_view_gender">Género:</string>
+    <string name="txt_view_race">Raza:</string>
+    <string name="txt_view_height">Altura:</string>
+    <string name="txt_view_weight">Peso:</string>
+    <string name="txt_view_eye_color">Color de ojos:</string>
+    <string name="txt_view_hair_color">Color de cabello:</string>
+    <string name="txt_view_work">Trabajo</string>
+    <string name="txt_view_occupation">Ocupación:</string>
+    <string name="txt_view_base">Base:</string>
+    <string name="txt_view_connections">Conexiones</string>
+    <string name="txt_view_group_affiliation">Grupo de afilicación:</string>
+    <string name="txt_view_relatives">Parientes:</string>
 </resources>

@@ -3,11 +3,544 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kotlinpractica.presentation.view.SuperHeroDetaitlsFragment">
+    tools:context="com.example.kotlinpractica.presentation.view.SuperHeroDetailsFragment">
 
-    <TextView
-        android:id="@+id/txtViewDetails"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="Nombre:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_nombre"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                tools:text="@string/txt_view_powerstats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_view_powerstats"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_intelligence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_intelligence"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViewIntelligence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_strength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_strength"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieStrength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_strength"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_durability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_durability"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieDurability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_power"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViePower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_combat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_combat"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieCombat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                tools:text="@string/txt_view_biography"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_view_biography"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_full_name"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_alter_egos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_alter_egos"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieAlterEgos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_aliases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_aliases"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieAliases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_place_of_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_place_of_birth"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViewPlaceOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_first_appearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_first_appearance"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViewFirsyAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_publisher"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViewPublisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_aligment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_aligment"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViewAligment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                tools:text="@string/txt_view_appearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_view_appearance"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_gender"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViewGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_race"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_race"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViewRace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_height"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViewHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_weight"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViewWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_eye_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_eye_color"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieEyeColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_hair_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_hair_color"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieHairColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                tools:text="@string/txt_view_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_view_work"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_occupation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_occupation"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieOccupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_base"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtVieBase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                tools:text="@string/txt_view_connections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_view_connections"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_group_affiliation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_group_affiliation"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViewGroupAffiliation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="@string/txt_view_relatives"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_view_relatives"
+                    android:textStyle="bold" />
+                <TextView
+                    tools:text="Batman"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/txtViewRelatives"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:padding="16dp"
+                android:id="@+id/imageUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

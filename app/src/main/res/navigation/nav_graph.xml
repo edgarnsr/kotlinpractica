@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/superHeroDetaitlsFragment"
-        android:name="com.example.kotlinpractica.presentation.view.SuperHeroDetaitlsFragment"
+        android:name="com.example.kotlinpractica.presentation.view.SuperHeroDetailsFragment"
         android:label="fragment_super_hero_detaitls"
         tools:layout="@layout/fragment_super_hero_detaitls" >
         <action

@@ -75,11 +75,14 @@ class ItemsRecyclerAdapter(
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder.itemViewType == Constant.VIEW_TYPE_ITEM) {
+
             val textView = holder.itemView.findViewById<TextView>(R.id.txtView)
             textView.text = itemsCells[position]!!.name
+
             val imgView = holder.itemView.findViewById<ImageView>(R.id.imgView)
+
             Picasso.get().load(itemsCells[position]!!.image.url).into(imgView);
-            val parent: LinearLayout = holder.itemView.findViewById(R.id.linearItemRow)
+
             holder.itemView.setOnClickListener {
                 cellClickListener.onCellClickListener(itemsCells[position]!!)
             }

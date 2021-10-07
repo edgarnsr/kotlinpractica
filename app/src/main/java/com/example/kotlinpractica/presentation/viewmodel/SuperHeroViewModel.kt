@@ -5,11 +5,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kotlinpractica.data.model.SuperHeroModel
 import com.example.kotlinpractica.domain.GetChunkSuperHeroUseCase
+import com.google.gson.Gson
 import kotlinx.coroutines.launch
+
 
 class SuperHeroViewModel: ViewModel() {
 
-    val superHeroDetail = MutableLiveData<String>()
+    val superHeroDetail = MutableLiveData<SuperHeroModel>()
 
     val getChunkSuperHero = GetChunkSuperHeroUseCase()
 
@@ -27,7 +29,10 @@ class SuperHeroViewModel: ViewModel() {
     }
 
     fun setSuperHeroDetail(data: String) {
-        superHeroDetail.postValue(data)
+        val gson = Gson()
+        superHeroDetail.postValue(
+            gson.fromJson(data,SuperHeroModel::class.java)
+        )
     }
 
     fun getTotalSuperHeros(): ArrayList<SuperHeroModel?> {
